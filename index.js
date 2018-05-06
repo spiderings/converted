@@ -9,7 +9,7 @@ function c(str) {
 
 function encode(str) {
   c('begin to encode');
-  c(`input: ${str}`)
+  c(`input: ${str}`);
 
   const splitedStrs = str.split('');
   const convertedNumbers = splitedStrs.map((text, index) => (alphabets.indexOf(text) + index + 1) % totalAlphabets);
@@ -21,7 +21,7 @@ function encode(str) {
 
 function decode(str) {
   c('begin to encode');
-  c(`input: ${str}`)
+  c(`input: ${str}`);
 
   const splitedStrs = str.split('');
   const convertedNumbers = splitedStrs.map((text, index) => {
@@ -39,7 +39,7 @@ function decode(str) {
 }
 
 // work && debug
-const fax = 'fax'
+const fax = 'fax';
 const encodedFax = encode(fax);
 const decodedFax = decode(encodedFax);
 
@@ -48,3 +48,4 @@ if (fax == decodedFax) {
 } else {
   c('not equal');
 }
+
